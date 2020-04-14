@@ -16,7 +16,7 @@ public class RegisterTest extends TestBase {
     RegisterPage registerPage = new RegisterPage();
 
 
-    @Test
+    @Test(groups = {"Regression"})
     public void verifyUserShouldNavigateToRegisterFeature() {
         //below methods calling from pages package
         homePage.clickOnRegisterButton();

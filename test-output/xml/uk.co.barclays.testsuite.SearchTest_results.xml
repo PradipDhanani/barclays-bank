@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="search test"
+           tests="1"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="2.526">
+  <properties />
+  
+  
+            <testcase name="verifyUserShouldNavigateToSearchFeature" time="2.526" classname="uk.co.barclays.testsuite.SearchTest" />
+      
+</testsuite>

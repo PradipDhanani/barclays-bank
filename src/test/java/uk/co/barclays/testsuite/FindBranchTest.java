@@ -16,7 +16,7 @@ public class FindBranchTest extends TestBase {
     FindBranchPage findBranchPage = new FindBranchPage();
 
 
-    @Test
+    @Test(groups = {"Regression"})
     public void verifyUserShouldNavigateToFindABranchFeature() {
         //below methods calling from pages package
         homePage.clickOnFindBranchButton();

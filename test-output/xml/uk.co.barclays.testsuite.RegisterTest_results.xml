@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="register test"
+           tests="1"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="9.752">
+  <properties />
+  
+  
+            <testcase name="verifyUserShouldNavigateToRegisterFeature" time="9.752" classname="uk.co.barclays.testsuite.RegisterTest" />
+      
+</testsuite>

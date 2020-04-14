@@ -16,7 +16,7 @@ public class SearchTest extends TestBase {
     SearchPage searchPage = new SearchPage();
 
 
-    @Test
+    @Test(groups = {"Regression"})
     public void verifyUserShouldNavigateToSearchFeature() {
         //below methods calling from pages package
         homePage.clickOnSearchButton();

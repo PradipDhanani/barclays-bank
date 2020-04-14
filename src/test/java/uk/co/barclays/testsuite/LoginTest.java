@@ -16,7 +16,7 @@ public class LoginTest extends TestBase {
     LoginPage loginPage = new LoginPage();
 
 
-    @Test
+    @Test(groups = {"sanity","smoke"})
     public void verifyUserShouldNavigateToLoginFeature() {
         //below methods calling from pages package
         homePage.clickOnLoginButton();

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="testsuite" verbose="1" >
+    <listeners>
+        <listener class-name="uk.co.barclays.listeners.Listeners"></listener>
+    </listeners>
+
+    <test name="Contact us Test" >
+        <classes>
+            <class name="uk.co.barclays.testsuite.ContactUsTest"/>
+        </classes>
+    </test>
+
+    <test name="Find Branch Test" >
+        <classes>
+            <class name="uk.co.barclays.testsuite.FindBranchTest"/>
+        </classes>
+    </test>
+
+    <test name="Login Test" >
+        <classes>
+            <class name="uk.co.barclays.testsuite.LoginTest"/>
+        </classes>
+    </test>
+
+    <test name="Register Test" >
+        <classes>
+            <class name="uk.co.barclays.testsuite.RegisterTest"/>
+        </classes>
+    </test>
+
+    <test name="Search Test" >
+        <classes>
+            <class name="uk.co.barclays.testsuite.SearchTest"/>
+        </classes>
+    </test>
+</suite>

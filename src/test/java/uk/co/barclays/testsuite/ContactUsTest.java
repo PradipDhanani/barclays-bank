@@ -16,7 +16,7 @@ public class ContactUsTest extends TestBase {
     ContactUsPage contactUsPage = new ContactUsPage();
 
 
-    @Test
+    @Test(groups = {"sanity","smoke"})
     public void verifyUserShouldNavigateToContactUsFeature() {
         //below methods calling from pages package
         homePage.clickOnContactUsButton();

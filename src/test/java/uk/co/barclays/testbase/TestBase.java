@@ -4,6 +4,7 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import uk.co.barclays.basepage.BasePage;
 import uk.co.barclays.browserselector.BrowserSelector;
+import uk.co.barclays.loadproperty.LoadProperty;
 
 
 import java.util.concurrent.TimeUnit;
@@ -16,15 +17,19 @@ public class TestBase extends BasePage {
 
     //object created for browser selector
     BrowserSelector browserSelector = new BrowserSelector();
+    LoadProperty loadProperty = new LoadProperty();
 
-    //baseUrl variable define Url of application
-    String baseUrl = "https://www.barclays.co.uk/";
+    String baseUrl = loadProperty.getProperty("baseUrl");
+    String browser = loadProperty.getProperty("browser");
+
+
+
 
     //before method comes from TestNG to do action before method
-    @BeforeMethod
+    @BeforeMethod(groups = {"sanity","smoke","Regression"})
     //below code to open chrome browser
     public void openBrowser() {
-        browserSelector.selectBrowser("chrome");
+        browserSelector.selectBrowser(browser);
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.get(baseUrl);
@@ -32,7 +37,7 @@ public class TestBase extends BasePage {
     }
 
     //after class comes from TestNG to do action after class
-    @AfterMethod
+    @AfterMethod(groups = {"sanity","smoke","Regression"})
     //below code closed browsers
     public void tearDown() {
         driver.quit();

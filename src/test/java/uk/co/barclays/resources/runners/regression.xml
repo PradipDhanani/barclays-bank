@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Regression" verbose="1" >
+    <groups>
+        <run>
+            <include name="Regression"></include>
+        </run>
+    </groups>
+    <test name="Regression" >
+        <classes>
+            <class name="uk.co.barclays.testsuite.ContactUsTest"/>
+            <class name="uk.co.barclays.testsuite.FindBranchTest"/>
+            <class name="uk.co.barclays.testsuite.LoginTest"/>
+            <class name="uk.co.barclays.testsuite.RegisterTest"/>
+            <class name="uk.co.barclays.testsuite.SearchTest"/>
+        </classes>
+    </test>
+</suite>
